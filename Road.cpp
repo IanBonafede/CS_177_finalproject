@@ -36,7 +36,7 @@ int Road::getEnd() {
 //examples for howFar = 8
 int Road::lookAhead(int carCell, int howFar) {
 	int i = 1;
-	while(i <= howFar && carCell + i <= cellNum - 1) {
+	while(i <= howFar && carCell + i < cellNum) {
 		if(  (*road)[carCell + i].status() == BUSY)
 			return i-1; //return cells free in front of you: 1-8 => 0-7
 		i++;

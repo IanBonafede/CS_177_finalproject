@@ -80,11 +80,11 @@ void Car::run() {
 			( * roadZone->getRoad() )[front+1].reserve();
 			front++;
 			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
-			if(tail < 0) 
+			/*if(tail < 0) 
 				( * roadEntrance->getRoad() )[roadEntrance->getEnd() + 1 + tail].release(); // tail could be in entrance
 			if(tail >= 0) 
 				( * roadZone->getRoad() )[tail].release(); // tail is in zone
-			tail++; // car length will be 2 (a small fraction of time)
+			tail++; // car length will be 2 (a small fraction of time)*/
 		}
 	}// here we are stopped somewhere in the drop off zone
 	
