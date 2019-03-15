@@ -29,7 +29,7 @@ void Generator::generateCars() {
 		//create the car
 		Car car(roadEntrance, roadZone, roadExit, trafficLight);
 		// hold for interval between cars
-		hold(CarGenInt);
+		hold(exponential(CarGenInt));
 	}
 	
 	

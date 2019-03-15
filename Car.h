@@ -20,7 +20,8 @@ private:
 	
 public:
 	Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl);
-	void run();
+	void run1();
+	void run2();
 	Speed updateSpeed(int check);
 	
 };

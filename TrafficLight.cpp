@@ -9,7 +9,7 @@
 TrafficLight::TrafficLight() {
 	create("Traffic Light");	
 	
-	goInt = 3; // sec
+	goInt = 10; // sec
 	
 	light = new facility("Light");
 	go = new event("GO");
