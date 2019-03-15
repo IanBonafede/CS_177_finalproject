@@ -63,6 +63,8 @@ void Car::run() {
 			}
 			tail++; // car length will be 2 (a small fraction of time)
 		}
+		else
+			hold(0.001);
 	}// here we have a speed, front is at the last cell, tail is the second to last cell
 	
 	
@@ -93,6 +95,8 @@ void Car::run() {
 				( * roadZone->getRoad() )[tail].release(); // tail is in zone
 			tail++; // car length will be 2 (a small fraction of time)
 		}
+		else
+			hold(0.001);
 		
 	}// here we are stopped somewhere in the drop off zone
 	cout << "Stopped. Front: " << front << " Unloading..." << endl;
@@ -117,6 +121,8 @@ void Car::run() {
 				( * roadZone->getRoad() )[tail].release();
 			tail++; // car length will be 2 (a small fraction of time)
 		}
+		else
+			hold(0.001);
 	}// here we have a speed, front is at the last cell, tail is the second to last cell
 	
 	
@@ -152,6 +158,8 @@ void Car::run() {
 			}
 			tail++; // car length will be 2 (a small fraction of time)
 		}
+		else
+			hold(0.001);
 	}// here we are gone 
 	cout << "Gone" << endl;
 	
