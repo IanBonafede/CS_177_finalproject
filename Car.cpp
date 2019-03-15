@@ -60,7 +60,7 @@ void Car::run() {
 	}// here we have a speed, front is at the last cell, tail is the second to last cell
 	
 	
-/*
+
 
 
 
@@ -112,13 +112,13 @@ void Car::run() {
 	
 	
 	
+	/*
 	
 	
 	
 	
 	
-	
-	//------------------road zone------------------------
+	//------------------road exit------------------------
 	//---------------------------------------------------
 	front = -1; // index of front of car
 	tail = -2; // index of back of car
