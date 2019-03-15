@@ -15,7 +15,7 @@ Generator::Generator() {
 	roadExit = new Road(10, 1);
 	
 	trafficLight = new TrafficLight();
-	CarGenInt = 30; // sec
+	CarGenInt = 25; // sec
 	
 	
 	
