@@ -2,6 +2,7 @@
 #define CAR_H
 
 
+#include "Speed.h"
 
 using namespace std;
 
