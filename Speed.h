@@ -3,7 +3,7 @@
 
 
 
-enum Speed 
+enum Speeds 
 { 
 	
 	SPEED0 = 0,
@@ -13,7 +13,7 @@ enum Speed
 	SPEED4 = (1 / 3),
 	SPEED5 = (1 / 4)
 	
-} Speed;// in cells per second
+};// in cells per second
 
 #endif /* SPEED_H */
 

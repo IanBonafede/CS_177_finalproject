@@ -18,14 +18,14 @@ private:
 	Road *roadExit; 
 	TrafficLight *trafficLight;   
 	double length;
-	Speed speed;
+	Speeds speed;
 	double unloadTime;
 	int lookAheadDistance;
 	
 public:
 	Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl);
 	void run();
-	Speed updateSpeed(int check);
+	Speeds updateSpeed(int check);
 	
 };
 
