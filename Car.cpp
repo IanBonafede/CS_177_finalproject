@@ -87,6 +87,7 @@ void Car::run() {
 				( * roadZone->getRoad() )[tail].release(); // tail is in zone
 			tail++; // car length will be 2 (a small fraction of time)
 		}
+		cout << "Stopped. Unloading..." << endl;
 	}// here we are stopped somewhere in the drop off zone
 	
 	hold(unloadTime);
