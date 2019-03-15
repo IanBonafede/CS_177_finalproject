@@ -5,7 +5,7 @@
 
  
 
-typedef enum Speed { // in cells per second
+enum Speed { // in cells per second
 	
 	SPEED0 = 0;
 	SPEED1 = 3 / 2;

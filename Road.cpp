@@ -1,6 +1,7 @@
 #include <iostream>
 #include "cpp.h"
 #include <string.h>
+#include "math.h"
 
 using namespace std;
 
@@ -10,15 +11,15 @@ using namespace std;
 
 class Road {
 private:
-	facilitySet *road;
+	facility_set *road;
 	double cellLength;
 	int cellNum;
 	
 public:
 	Road(double len, double cellLen);
-	getRoad();
-	lookAheadEntrance(int carCell, int howMany);
-	getEnd();
+	facility_set getRoad();
+	int lookAhead(int carCell, int howMany);
+	int getEnd();
 	
 };
 
@@ -27,17 +28,17 @@ Road::Road(double len, double cellLen) {
 	
 	cellLength = cellLen;
 	cellNum = floor(len / cellLen); 
-	road = new facilitySet("Road", cellNum);
+	road = new facility_set("Road", cellNum);
 	
 	
 }
 
-facilitySet *Road::getRoad() {
+facility_set *Road::getRoad() {
 	return road;
 }
 
 int Road::getEnd() {
-	return cellNum - 1;
+	return (cellNum - 1);
 }
 
 

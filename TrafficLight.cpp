@@ -8,20 +8,22 @@
 class TrafficLight {
 private:
 	facility *light;
-	event go;
+	event *go;
 	double goInt;
 	
 public:
 	TrafficLight();
-	run();
+	void run();
 	
 	
 };
 
 TrafficLight::TrafficLight() {
+	create("Traffic Light");	
+	
 	goInt = 20; // sec
 	
-	light = new Facility("Light");
+	light = new facility("Light");
 	go = new event("GO");
 	
 	run();
@@ -29,7 +31,7 @@ TrafficLight::TrafficLight() {
 }
 
 void TrafficLight::run() {
-	create("Traffic Light");
+	
 	
 	while(true) {
 		//create the car

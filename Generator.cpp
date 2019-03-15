@@ -26,10 +26,13 @@ public:
 };
 
 Generator::Generator(Road *ren, Road *rz, Road *rex, TrafficLight *tl) {
-	roadEntrance = ren;
-	roadZone = rz;
-	roadExit = rex;
-	trafficLight = tl;
+	
+	
+	roadEntrance = new Road(10, 1);
+	roadZone = new Road(10, 1);
+	roadExit = new Road(10, 1);
+	
+	trafficLight = new TrafficLight();
 	CarGenInt = 30; // sec
 	
 	
