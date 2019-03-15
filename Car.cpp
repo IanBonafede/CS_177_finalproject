@@ -28,7 +28,7 @@ void Car::run() {
 	
 	
 	//-----------------traffic light------------------------
-	trafficLight->getLight()->use();
+	trafficLight->getLight()->reserve();
 	trafficLight->getGoEvent()->wait();
 
 
@@ -147,8 +147,8 @@ void Car::run() {
 }
 
 
-Speeds Car::updateSpeed(int check) {
-	switch(Speed) {
+Speed Car::updateSpeed(int check) {
+	switch(speed) {
 		case SPEED0: 
 			switch(check) {
 				case 0: return SPEED0;

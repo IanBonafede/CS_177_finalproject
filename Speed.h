@@ -3,7 +3,7 @@
 
 
 
-enum Speeds 
+enum Speed 
 { 
 	
 	SPEED0 = 0,
