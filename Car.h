@@ -6,20 +6,10 @@
 #include <string.h>
 #include "Road.h"
 #include "TrafficLight.h"
+#include "Speed.h"
 
 using namespace std;
 
-enum Speed 
-{ 
-	
-	SPEED0 = 0,
-	SPEED1 = (3 / 2),
-	SPEED2 = (11 / 12),
-	SPEED3 = (1 / 2),
-	SPEED4 = (1 / 3),
-	SPEED5 = (1 / 4)
-	
-} Speed;// in cells per second
 
 class Car {
 private:
