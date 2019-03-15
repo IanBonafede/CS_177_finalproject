@@ -24,7 +24,7 @@ void Generator::generateCars() {
 	create("Car Generator");
 	while(true) {
 		//create the car
-		Car car = new Car(roadEntrance, roadZone, roadExit, trafficLight);
+		Car car(roadEntrance, roadZone, roadExit, trafficLight);
 		// hold for interval between cars
 		hold(CarGenInt);
 	}

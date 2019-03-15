@@ -2,10 +2,6 @@
 #include "cpp.h"
 #include <string.h>
 #include "Generator.cpp"
-#include "Road.cpp"
-#include "TrafficLight.cpp"
-#include "Car.cpp"
-#include "Speed.h"
 
 using namespace std;
 
