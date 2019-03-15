@@ -30,7 +30,7 @@ void Car::run() {
 	//-----------------traffic light------------------------
 	trafficLight->getLight()->reserve();
 	trafficLight->getGoEvent()->wait();
-
+	
 
 
 
@@ -55,6 +55,8 @@ void Car::run() {
 			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
 			if(tail >= 0) 
 				( * roadEntrance->getRoad() )[tail].release();
+			if(tail == -1)
+				trafficLight->getLight()->release();
 			tail++; // car length will be 2 (a small fraction of time)
 		}
 	}// here we have a speed, front is at the last cell, tail is the second to last cell
