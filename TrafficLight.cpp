@@ -1,51 +1,42 @@
 
-#include <iostream>
 #include "cpp.h"
 #include <string.h>
-#include "Car.cpp"
 
 
 
 
 class TrafficLight {
 private:
-	facilitySet *roadEntrance;
-	facilitySet *roadZone;
-	facilitySet *roadExit;
-	facility *stopLight;
-	double CarGenInt;
+	facility *light;
+	event go;
+	double goInt;
 	
 public:
 	TrafficLight();
-	getStopLight();
+	run();
 	
 	
 };
 
-TrafficLight::TrafficLight(facilitySet *ren, facilitySet *rz, facilitySet *rex) {
-	roadEntrance = ren;
-	roadZone = rz;
-	roadExit = rex;
-	stopLight = new facility("STOP LIGHT");
-	CarGenInt = 30;
+TrafficLight::TrafficLight() {
+	goInt = 20; // sec
 	
-	create("Traffic Light");
+	light = new Facility("Light");
+	go = new event("GO");
 	
-	generateCars(stopLight, ren, rz, rex);
+	run();
 	
 }
 
-void TrafficLight::generateCars(facility *sl, facilitySet *ren, facilitySet *rz, facilitySet *rex) {
+void TrafficLight::run() {
+	create("Traffic Light");
+	
 	while(true) {
 		//create the car
-		Car car = new Car(sl, ren, rz, rex);
-		// hold for interval between cars
-		hold(CarGenInt);
+		go.set();
+		// hold for interval between
+		hold(goInt);
 	}
 	
 	
-}
-
-facility *getStopLight() {
-	return stopLight;
 }
