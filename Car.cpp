@@ -214,7 +214,7 @@ void Car::run2() {
 			if(tail >= 0) 
 				( * roadEntrance->getRoad() )[tail].release();
 			if(tail == -1) {
-				trafficLight->getLight()->release();
+				trafficLight->getLights()->release();
 				cout << "Leaving traffic light." << endl;
 			}
 			tail++; // car length will be 2 (a small fraction of time)
