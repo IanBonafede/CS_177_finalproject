@@ -1,6 +1,8 @@
 
 #include "cpp.h"
 #include <string.h>
+#include "Road.cpp"
+#include "TrafficLight.cpp"
 /*
 class Road;
 class TrafficLight;
@@ -34,6 +36,7 @@ private:
 public:
 	Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl);
 	void run();
+	Speed updateSpeed(int check);
 	
 };
 
