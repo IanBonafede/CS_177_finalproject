@@ -89,7 +89,7 @@ void Car::run() {
 	}// here we are stopped somewhere in the drop off zone
 	
 	hold(unloadTime);
-	
+	/*
 	
 	while( front < roadZone->getEnd() ) { // while index of the front of the car is < index of the end
 		check = roadZone->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
@@ -112,7 +112,7 @@ void Car::run() {
 	
 	
 	
-	/*
+	
 	
 	
 	
