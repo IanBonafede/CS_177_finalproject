@@ -2,6 +2,9 @@
 
 
 
+#include "cpp.h"
+#include <string.h>
+#include "Speed.h"
 
 
 class Car {
@@ -43,8 +46,8 @@ void Car::run() {
 	
 	
 	//-----------------traffic light------------------------
-	trafficLight->light->use();
-	trafficLight->go.wait();
+	trafficLight->getLight->use();
+	trafficLight->getGoEvent()->wait();
 
 
 
@@ -65,7 +68,7 @@ void Car::run() {
 			speed = updateSpeed(check);
 		}
 		if(speed != SPEED0) {
-			( * roadEntrance->getRoad() )[front+1].use();
+			( * roadEntrance->getRoad() )[front+1].reserve();
 			front++;
 			hold(speed); // in this hold, the car length is 3 (most of the time)
 			if(tail >= 0) 
@@ -92,7 +95,7 @@ void Car::run() {
 			speed = updateSpeed(check - lookAheadDistance); // we want to slow down before we stop at the end of the drop off zone
 		}
 		if(speed != SPEED0) {
-			( * roadZone->getRoad() )[front+1].use();
+			( * roadZone->getRoad() )[front+1].reserve();
 			front++;
 			hold(speed); // in this hold, the car length is 3 (most of the time)
 			if(tail < 0) 
@@ -116,7 +119,7 @@ void Car::run() {
 			speed = updateSpeed(check);
 		}
 		if(speed != SPEED0) {
-			( * roadZone->getRoad() )[front+1].use();
+			( * roadZone->getRoad() )[front+1].reserve();
 			front++;
 			hold(speed); // in this hold, the car length is 3 (most of the time)
 			if(tail >= 0) 
@@ -148,7 +151,7 @@ void Car::run() {
 		}
 		if(speed != SPEED0) {
 			if(front < roadExit->getEnd()) // front will leave the end
-				( * roadExit->getRoad() )[front+1].use(); 
+				( * roadExit->getRoad() )[front+1].reserve(); 
 			front++;
 			hold(speed); // in this hold, the car length is 3 (most of the time)
 			if(tail < 0) 

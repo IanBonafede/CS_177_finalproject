@@ -2,11 +2,6 @@
 #define CAR_H
 
 
-#include "cpp.h"
-#include <string.h>
-#include "Road.h"
-#include "TrafficLight.h"
-#include "Speed.h"
 
 using namespace std;
 

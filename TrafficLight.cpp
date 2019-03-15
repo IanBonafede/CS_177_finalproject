@@ -1,6 +1,11 @@
 
 #include "TrafficLight.h"
 
+
+#include "cpp.h"
+#include <string.h>
+
+
 TrafficLight::TrafficLight() {
 	create("Traffic Light");	
 	
@@ -24,4 +29,13 @@ void TrafficLight::run() {
 	}
 	
 	
+}
+
+event *TrafficLight::getGoEvent() {
+	return go;
+}
+
+
+facility *TrafficLight::getLight() {
+	return light;
 }

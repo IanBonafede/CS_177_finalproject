@@ -1,10 +1,6 @@
 #ifndef ROAD_H // include guard
 #define ROAD_H
 
-#include <iostream>
-#include "cpp.h"
-#include <string.h>
-#include "math.h"
 
 using namespace std;
 

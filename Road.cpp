@@ -1,5 +1,11 @@
 #include "Road.h"
 
+
+#include <iostream>
+#include "cpp.h"
+#include <string.h>
+#include "math.h"
+
 using namespace std;
 
 
@@ -46,7 +52,7 @@ int Road::getEnd() {
 int Road::lookAhead(int carCell, int howFar) {
 	int i = 1;
 	while(i <= howFar && carCell + i <= cellNum - 1) {
-		if( status( (*road)[carCell + i] ) == BUSY)
+		if(  (*road)[carCell + i].status() == BUSY)
 			return i-1; //return cells free in front of you: 1-8 => 0-7
 		i++;
 	}

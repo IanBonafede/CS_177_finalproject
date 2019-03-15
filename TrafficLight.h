@@ -3,9 +3,6 @@
 
 
 
-#include "cpp.h"
-#include <string.h>
-
 
 
 using namespace std;
@@ -20,6 +17,8 @@ private:
 public:
 	TrafficLight();
 	void run();
+	event *getGoEvent();
+	facility *getLight();
 	
 	
 };
