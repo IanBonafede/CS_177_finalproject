@@ -18,6 +18,6 @@ extern "C" void sim() // Alice is the main process
 	
 	Generator *gen = new Generator();
 	
-	hold(300);// 300 sec = 5 min
+	hold(1000);// 300 sec = 5 min
 	report();
 }
