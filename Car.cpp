@@ -7,23 +7,6 @@
 #include "Speed.h"
 
 
-class Car {
-private:
-	Road *roadEntrance;
-	Road *roadZone;
-	Road *roadExit; 
-	TrafficLight *trafficLight;   
-	double length;
-	Speed speed;
-	double unloadTime;
-	int lookAheadDistance;
-	
-public:
-	Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl);
-	void run();
-	Speed updateSpeed(int check);
-	
-};
 
 Car::Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl) {
 	create("Car");

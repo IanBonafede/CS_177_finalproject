@@ -4,9 +4,6 @@
 #include <iostream>
 #include "cpp.h"
 #include <string.h>
-#include "Car.cpp"
-#include "Road.cpp"
-#include "TrafficLight.cpp"
 
 
 
