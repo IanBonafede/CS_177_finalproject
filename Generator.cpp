@@ -2,30 +2,15 @@
 #include <iostream>
 #include "cpp.h"
 #include <string.h>
-#include "Car.cpp"
-#include "Road.cpp"
-#include "TrafficLight.cpp"
+#include "Generator.h"
+#include "Car.h"
+#include "Road.h"
+#include "TrafficLight.h"
 
 
 
 
-
-class Generator {
-private:
-	Road *roadEntrance;
-	Road *roadZone;
-	Road *roadExit;
-	TrafficLight *trafficLight;
-	double CarGenInt;
-	
-public:
-	Generator();
-	generateCars();
-	
-	
-};
-
-Generator::Generator(Road *ren, Road *rz, Road *rex, TrafficLight *tl) {
+Generator::Generator() {
 	
 	
 	roadEntrance = new Road(10, 1);

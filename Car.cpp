@@ -1,24 +1,11 @@
 
 #include "cpp.h"
 #include <string.h>
-#include "Road.cpp"
-#include "TrafficLight.cpp"
-/*
-class Road;
-class TrafficLight;
-*/
+#include "Car.h"
+#include "Road.h"
+#include "TrafficLight.h"
 
-enum Speed 
-{ 
-	
-	SPEED0 = 0,
-	SPEED1 = (3 / 2),
-	SPEED2 = (11 / 12),
-	SPEED3 = (1 / 2),
-	SPEED4 = (1 / 3),
-	SPEED5 = (1 / 4)
-	
-} Speed;// in cells per second
+
 
 
 
