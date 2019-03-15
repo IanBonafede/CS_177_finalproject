@@ -1,11 +1,11 @@
 #include <iostream>
 #include "cpp.h"
 #include <string.h>
-#include "Generator.h"
-#include "Road.h"
-#include "TrafficLight.h"
-#include "Car.h"
-#include "Speed.h"
+#include "Generator.cpp"
+#include "Road.cpp"
+#include "TrafficLight.cpp"
+#include "Car.cpp"
+#include "Speed.cpp"
 
 using namespace std;
 
