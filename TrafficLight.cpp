@@ -35,7 +35,7 @@ void TrafficLight::run() {
 	
 	while(true) {
 		//create the car
-		go.set();
+		go->set();
 		// hold for interval between
 		hold(goInt);
 	}

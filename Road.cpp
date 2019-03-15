@@ -17,7 +17,7 @@ private:
 	
 public:
 	Road(double len, double cellLen);
-	facility_set getRoad();
+	facility_set *getRoad();
 	int lookAhead(int carCell, int howMany);
 	int getEnd();
 	
