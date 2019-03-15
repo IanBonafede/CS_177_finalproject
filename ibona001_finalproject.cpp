@@ -1,6 +1,9 @@
 #include <iostream>
 #include "cpp.h"
 #include <string.h>
+#include "Road.cpp"
+#include "TrafficLight.cpp"
+#include "Generator.cpp"
 
 using namespace std;
 
