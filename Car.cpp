@@ -98,7 +98,7 @@ void Car::run() {
 	cout << "Stopped. Front: " << front << " Unloading..." << endl;
 	speed = SPEED0;
 	hold(unloadTime);
-	cout << "...Done. Front: " << front << " Departing..." << endl;
+	cout << "...Done. Front: " << front << " Departing." << endl;
 	
 	while( front < roadZone->getEnd() ) { // while index of the front of the car is < index of the end
 		check = roadZone->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
@@ -120,7 +120,7 @@ void Car::run() {
 	}// here we have a speed, front is at the last cell, tail is the second to last cell
 	
 	
-	/*
+	
 	
 	
 	
