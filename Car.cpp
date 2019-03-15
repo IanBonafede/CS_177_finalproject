@@ -138,7 +138,7 @@ void Car::run() {
 	front = -1; // index of front of car
 	tail = -2; // index of back of car
 	while( front < roadExit->getEnd() + 2) { // while index of the tail of the car is <= index of the end
-		check = roadZone->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
+		check = roadExit->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
 		if(check <= lookAheadDistance) { // free spots up to lookAheadDistance
 			speed = updateSpeed(check);
 		}
