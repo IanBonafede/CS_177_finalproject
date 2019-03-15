@@ -161,7 +161,7 @@ Speed Car::updateSpeed(int check) {
 				case 7: return SPEED1;
 				case 8: return SPEED1;
 				default:return SPEED0;
-			};
+			}; break;
 		case SPEED1: 
 			switch(check) {
 				case 0: return SPEED0;
@@ -174,7 +174,7 @@ Speed Car::updateSpeed(int check) {
 				case 7: return SPEED2;
 				case 8: return SPEED2;
 				default:return SPEED1;
-			};
+			}; break;
 		case SPEED2: 
 			switch(check) {
 				case 0: return SPEED0;
@@ -187,7 +187,7 @@ Speed Car::updateSpeed(int check) {
 				case 7: return SPEED3;
 				case 8: return SPEED3;
 				default:return SPEED2;
-			};
+			}; break;
 		case SPEED3: 
 			switch(check) {
 				case 0: return SPEED0;
@@ -200,7 +200,7 @@ Speed Car::updateSpeed(int check) {
 				case 7: return SPEED4;
 				case 8: return SPEED4;
 				default:return SPEED3;
-			};
+			}; break;
 		case SPEED4: 
 			switch(check) {
 				case 0: return SPEED0;
@@ -213,7 +213,7 @@ Speed Car::updateSpeed(int check) {
 				case 7: return SPEED4;
 				case 8: return SPEED5;
 				default:return SPEED4;
-			};
+			}; break;
 		case SPEED5: 
 			switch(check) {
 				case 0: return SPEED0;
@@ -226,7 +226,7 @@ Speed Car::updateSpeed(int check) {
 				case 7: return SPEED4;
 				case 8: return SPEED5;
 				default:return SPEED5;
-			};
+			}; break;
 		default: return SPEED0;
 	}
 		
