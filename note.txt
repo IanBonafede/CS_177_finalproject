@@ -1,0 +1,29 @@
+car generator interval = 5
+traffic light interval = 20
+
+ibona001_finalproject_base_1:
+
+
+
+
+ibona001_finalproject_auto_1:
+
+
+
+
+
+
+
+
+
+
+traffic light interval = 5
+
+
+ibona001_finalproject_base_1:
+
+
+
+
+ibona001_finalproject_auto_1:
+
