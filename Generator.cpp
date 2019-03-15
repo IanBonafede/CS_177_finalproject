@@ -1,11 +1,5 @@
 
-#include <iostream>
-#include "cpp.h"
-#include <string.h>
 #include "Generator.h"
-#include "Car.h"
-#include "Road.h"
-#include "TrafficLight.h"
 
 
 

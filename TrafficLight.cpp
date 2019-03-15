@@ -1,22 +1,5 @@
 
-#include "cpp.h"
-#include <string.h>
-
-
-
-
-class TrafficLight {
-private:
-	facility *light;
-	event *go;
-	double goInt;
-	
-public:
-	TrafficLight();
-	void run();
-	
-	
-};
+#include "TrafficLight.h"
 
 TrafficLight::TrafficLight() {
 	create("Traffic Light");	

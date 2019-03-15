@@ -2,6 +2,12 @@
 #define CAR_H
 
 
+#include "cpp.h"
+#include <string.h>
+#include "Car.h"
+#include "Road.h"
+#include "TrafficLight.h"
+
 using namespace std;
 
 enum Speed 
