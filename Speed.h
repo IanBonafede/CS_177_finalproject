@@ -7,11 +7,11 @@ enum Speed
 { 
 	
 	SPEED0 = 0,
-	SPEED1 = (3 / 2),
-	SPEED2 = (11 / 12),
-	SPEED3 = (1 / 2),
-	SPEED4 = (1 / 3),
-	SPEED5 = (1 / 4)
+	SPEED1 = 1.5,
+	SPEED2 = 0.9166,
+	SPEED3 = 0.5,
+	SPEED4 = 0.3333,
+	SPEED5 = 0.25
 	
 };// in cells per second
 
