@@ -7,13 +7,13 @@ enum Speed
 { 
 	
 	SPEED0 = 0,
-	SPEED1 = 1.5,
-	SPEED2 = 0.9166,
-	SPEED3 = 0.5,
-	SPEED4 = 0.3333,
-	SPEED5 = 0.25
+	SPEED1 = 150,
+	SPEED2 = 91,
+	SPEED3 = 50,
+	SPEED4 = 33,
+	SPEED5 = 25
 	
-};// in cells per second
+};// in cells per second * 100
 
 #endif /* SPEED_H */
 

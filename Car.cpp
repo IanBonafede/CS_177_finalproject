@@ -52,7 +52,7 @@ void Car::run() {
 		if(speed != SPEED0) {
 			( * roadEntrance->getRoad() )[front+1].reserve();
 			front++;
-			hold(speed); // in this hold, the car length is 3 (most of the time)
+			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
 			if(tail >= 0) 
 				( * roadEntrance->getRoad() )[tail].release();
 			tail++; // car length will be 2 (a small fraction of time)
@@ -79,7 +79,7 @@ void Car::run() {
 		if(speed != SPEED0) {
 			( * roadZone->getRoad() )[front+1].reserve();
 			front++;
-			hold(speed); // in this hold, the car length is 3 (most of the time)
+			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
 			if(tail < 0) 
 				( * roadEntrance->getRoad() )[roadEntrance->getEnd() + 1 - tail].release(); // tail could be in entrance
 			if(tail >= 0) 
@@ -103,7 +103,7 @@ void Car::run() {
 		if(speed != SPEED0) {
 			( * roadZone->getRoad() )[front+1].reserve();
 			front++;
-			hold(speed); // in this hold, the car length is 3 (most of the time)
+			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
 			if(tail >= 0) 
 				( * roadZone->getRoad() )[tail].release();
 			tail++; // car length will be 2 (a small fraction of time)
@@ -135,7 +135,7 @@ void Car::run() {
 			if(front < roadExit->getEnd()) // front will leave the end
 				( * roadExit->getRoad() )[front+1].reserve(); 
 			front++;
-			hold(speed); // in this hold, the car length is 3 (most of the time)
+			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
 			if(tail < 0) 
 				( * roadZone->getRoad() )[roadZone->getEnd() + 1 - tail].release(); // tail could be in zone
 			if(tail >= 0) 
