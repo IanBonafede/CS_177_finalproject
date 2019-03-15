@@ -1,9 +1,10 @@
 
 #include "cpp.h"
 #include <string.h>
-
+/*
 class Road;
 class TrafficLight;
+*/
 
 enum Speed 
 { 
@@ -28,6 +29,7 @@ private:
 	double length;
 	Speed speed;
 	double unloadTime;
+	int lookAheadDistance;
 	
 public:
 	Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl);
