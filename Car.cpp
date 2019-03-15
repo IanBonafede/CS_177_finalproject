@@ -30,7 +30,6 @@ void Car::run1() {
 	
 	
 	//-----------------traffic light------------------------
-	trafficLight->getLight()->queue();
 	trafficLight->getLight()->reserve();
 	cout << "At traffic light." << endl;
 	trafficLight->getGoEvent()->wait();
@@ -183,7 +182,6 @@ void Car::run2() {
 	
 	
 	//-----------------traffic light------------------------
-	trafficLight->getLights()->queue();
 	trafficLight->getLights()->reserve();
 	cout << "At traffic light." << endl;
 	trafficLight->getGoEvent()->wait();
