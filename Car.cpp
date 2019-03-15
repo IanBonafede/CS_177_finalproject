@@ -193,11 +193,10 @@ void Car::run2() {
 	//------------------road entrace------------------------
 	//------------------------------------------------------
 	
-	int zoneEnd = roadZone->getEnd();
 	
 	int check = -1;
 	int front = -1; // index of front of car
-	int tail = front - zoneEnd; // index of back of car
+	int tail = -2; // index of back of car
 	while( front < roadEntrance->getEnd() ) { // while index of the front of the car is < index of the end
 		check = roadEntrance->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
 		if(check <= lookAheadDistance) { // free spots up to lookAheadDistance
@@ -231,7 +230,7 @@ void Car::run2() {
 	//------------------road zone------------------------
 	//---------------------------------------------------
 	front = -1; // index of front of car
-	tail = front - zoneEnd; // index of back of car
+	tail = -2; // index of back of car
 	while(tail < 0 || (speed != SPEED0 && front < roadZone->getEnd()) ) { // while index of the front of the car is < index of the end
 		check = roadZone->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
 		if(check <= lookAheadDistance) { // free spots up to lookAheadDistance
@@ -292,7 +291,7 @@ void Car::run2() {
 	//------------------road exit------------------------
 	//---------------------------------------------------
 	front = -1; // index of front of car
-	tail = front - zoneEnd; // index of back of car
+	tail = -2; // index of back of car
 	while( front < roadExit->getEnd() + 2) { // while index of the tail of the car is <= index of the end
 		check = roadExit->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
 		if(check <= lookAheadDistance) { // free spots up to lookAheadDistance
