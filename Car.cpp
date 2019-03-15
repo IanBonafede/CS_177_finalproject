@@ -68,23 +68,24 @@ void Car::run() {
 	//---------------------------------------------------
 	front = -1; // index of front of car
 	tail = -2; // index of back of car
-	while(tail < 0 || speed != SPEED0) { // while index of the front of the car is < index of the end
+	while(tail < 0 || check > 0) { // while index of the front of the car is < index of the end
 		check = roadZone->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
 		if(check <= lookAheadDistance) { // free spots up to lookAheadDistance
 			speed = updateSpeed(check);
 		}
 		else if(check > lookAheadDistance) { // free spots up to end of road
-			speed = updateSpeed(check - lookAheadDistance); // we want to slow down before we stop at the end of the drop off zone
+			check = check - lookAheadDistance;
+			speed = updateSpeed(check); // we want to slow down before we stop at the end of the drop off zone
 		}
 		if(speed != SPEED0) {
 			( * roadZone->getRoad() )[front+1].reserve();
 			front++;
 			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
-			/*if(tail < 0) 
+			if(tail < 0) 
 				( * roadEntrance->getRoad() )[roadEntrance->getEnd() + 1 + tail].release(); // tail could be in entrance
 			if(tail >= 0) 
 				( * roadZone->getRoad() )[tail].release(); // tail is in zone
-			tail++; // car length will be 2 (a small fraction of time)*/
+			tail++; // car length will be 2 (a small fraction of time)
 		}
 	}// here we are stopped somewhere in the drop off zone
 	
