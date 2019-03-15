@@ -12,7 +12,8 @@ private:
 	Road *roadEntrance;
 	Road *roadZone;
 	Road *roadExit; 
-	TrafficLight *trafficLight;   
+	TrafficLight *trafficLight;  
+	Stat *stat; 
 	double length;
 	Speed speed;
 	double unloadTime;

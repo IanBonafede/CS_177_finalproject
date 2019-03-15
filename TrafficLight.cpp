@@ -9,7 +9,7 @@
 TrafficLight::TrafficLight() {
 	create("Traffic Light");	
 	
-	goInt = 30; // sec
+	goInt = 20; // sec
 	
 	light = new facility("Light");
 	lights = new facility_ms("Lights", 5);

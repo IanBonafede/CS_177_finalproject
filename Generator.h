@@ -14,10 +14,11 @@ private:
 	Road *roadZone;
 	Road *roadExit;
 	TrafficLight *trafficLight;
+	Stat *stat;
 	double CarGenInt;
 	
 public:
-	Generator();
+	Generator(Stat *st);
 	void generateCars();
 	
 	

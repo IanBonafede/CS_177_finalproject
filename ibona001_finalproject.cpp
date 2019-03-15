@@ -5,19 +5,21 @@
 #include "TrafficLight.cpp"
 #include "Car.cpp"
 #include "Generator.cpp"
-
+#include "Stat.cpp"
 
 using namespace std;
 
 
 
-extern "C" void sim() // Alice is the main process
+extern "C" void sim() // The main process
 {
 	create("sim");
+	double time = 1000;
+	Stat *stat = new Stat();
 	
+	Generator *gen = new Generator(stat);
 	
-	Generator *gen = new Generator();
-	
-	hold(1000);// 1000 sec
+	hold(time);// 1000 sec
 	report();
+	stat->printThroughput(time);
 }

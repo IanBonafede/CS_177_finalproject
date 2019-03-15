@@ -8,7 +8,7 @@
 
 
 
-Car::Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl) {
+Car::Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl, Stat *st) {
 	create("Car");
 	
 	roadEntrance = ren;
@@ -18,6 +18,7 @@ Car::Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl) {
 	length = 2; // cells (unused)
 	lookAheadDistance = 8; // cells
 	speed = SPEED0;
+	stat = st;
 	unloadTime = 15; // sec
 	
 	
@@ -162,6 +163,7 @@ void Car::run1() {
 		else
 			hold(0.001);
 	}// here we are gone 
+	stat->count();
 	cout << "Gone" << endl;
 	
 }
@@ -316,6 +318,7 @@ void Car::run2() {
 		else
 			hold(0.001);
 	}// here we are gone 
+	stat->count();
 	cout << "Gone" << endl;
 	
 }
