@@ -17,7 +17,7 @@ Car::Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl) {
 	length = 2; // cells (unused)
 	lookAheadDistance = 8; // cells
 	speed = SPEED0;
-	unloadTime = 10; // sec
+	unloadTime = 15; // sec
 	
 	run();
 	
