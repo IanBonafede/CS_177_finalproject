@@ -26,14 +26,14 @@ Car::Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl) {
 
 void Car::run() {
 	
-	/*
+	
 	//-----------------traffic light------------------------
 	trafficLight->getLight()->reserve();
 	trafficLight->getGoEvent()->wait();
 
 
 
-
+/*
 	
 	//------------------road entrace------------------------
 	//------------------------------------------------------
