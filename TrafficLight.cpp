@@ -12,6 +12,7 @@ TrafficLight::TrafficLight() {
 	goInt = 10; // sec
 	
 	light = new facility("Light");
+	lights = new facility_ms("Lights", 5);
 	go = new event("GO");
 	
 	run();
@@ -38,4 +39,9 @@ event *TrafficLight::getGoEvent() {
 
 facility *TrafficLight::getLight() {
 	return light;
+}	
+
+
+facility_ms *TrafficLight::getLights() {
+	return lights;
 }

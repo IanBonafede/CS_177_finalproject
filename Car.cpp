@@ -30,7 +30,7 @@ void Car::run1() {
 	
 	
 	//-----------------traffic light------------------------
-	
+	rafficLight->getLight()->queue();
 	trafficLight->getLight()->reserve();
 	cout << "At traffic light." << endl;
 	trafficLight->getGoEvent()->wait();
@@ -103,7 +103,7 @@ void Car::run1() {
 	}// here we are stopped somewhere in the drop off zone
 	cout << "Stopped. Front: " << front << " Unloading..." << endl;
 	speed = SPEED0;
-	hold(abs((int)normal(unloadTime, 3.5)));
+	hold(abs((normal(unloadTime, 3.5)));
 	cout << "...Done. Front: " << front << " Departing." << endl;
 	
 	while( front < roadZone->getEnd() ) { // while index of the front of the car is < index of the end
@@ -183,8 +183,8 @@ void Car::run2() {
 	
 	
 	//-----------------traffic light------------------------
-	
-	trafficLight->getLight()->reserve();
+	trafficLight->getLights()->queue();
+	trafficLight->getLights()->reserve();
 	cout << "At traffic light." << endl;
 	trafficLight->getGoEvent()->wait();
 	

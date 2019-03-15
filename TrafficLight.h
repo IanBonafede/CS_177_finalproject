@@ -11,6 +11,7 @@ using namespace std;
 class TrafficLight {
 private:
 	facility *light;
+	facility_ms *lights;
 	event *go;
 	double goInt;
 	
@@ -19,6 +20,7 @@ public:
 	void run();
 	event *getGoEvent();
 	facility *getLight();
+	facility_ms *getLights();
 	
 	
 };
