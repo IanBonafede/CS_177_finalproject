@@ -29,7 +29,7 @@ void Car::run() {
 	
 	
 	//-----------------traffic light------------------------
-	trafficLight->getLight->use();
+	trafficLight->getLight()->use();
 	trafficLight->getGoEvent()->wait();
 
 
@@ -69,7 +69,7 @@ void Car::run() {
 	//---------------------------------------------------
 	front = -1; // index of front of car
 	tail = -2; // index of back of car
-	while( front < roadZone->getEnd() || tail < 0 || speed != 0) { // while index of the front of the car is < index of the end
+	while( front < roadZone->getEnd() || tail < 0 || speed != SPEED0) { // while index of the front of the car is < index of the end
 		check = roadZone->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
 		if(check <= lookAheadDistance) { // free spots up to lookAheadDistance
 			speed = updateSpeed(check);
@@ -148,7 +148,7 @@ void Car::run() {
 }
 
 
-Speed Car::updateSpeed(int check) {
+Speeds Car::updateSpeed(int check) {
 	switch(Speed) {
 		case SPEED0: 
 			switch(check) {
