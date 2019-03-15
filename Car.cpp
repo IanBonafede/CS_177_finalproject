@@ -3,6 +3,7 @@
 #include <string.h>
 
 class Road;
+class TrafficLight;
 
 enum Speed 
 { 
@@ -29,8 +30,8 @@ private:
 	double unloadTime;
 	
 public:
-	Car();
-	
+	Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl);
+	void run();
 	
 };
 
