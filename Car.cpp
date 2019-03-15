@@ -33,7 +33,7 @@ void Car::run() {
 
 
 
-/*
+
 	
 	//------------------road entrace------------------------
 	//------------------------------------------------------
@@ -60,7 +60,7 @@ void Car::run() {
 	}// here we have a speed, front is at the last cell, tail is the second to last cell
 	
 	
-
+/*
 
 
 
