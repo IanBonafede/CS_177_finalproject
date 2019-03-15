@@ -5,7 +5,7 @@
 #include "Road.cpp"
 #include "TrafficLight.cpp"
 #include "Car.cpp"
-#include "Speed.cpp"
+#include "Speed.h"
 
 using namespace std;
 
