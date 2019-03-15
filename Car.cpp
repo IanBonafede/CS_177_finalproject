@@ -131,7 +131,7 @@ void Car::run() {
 	//---------------------------------------------------
 	front = -1; // index of front of car
 	tail = -2; // index of back of car
-	while( tail <= roadExit->getEnd() + 2) { // while index of the tail of the car is <= index of the end
+	while( front < roadExit->getEnd() + 2) { // while index of the tail of the car is <= index of the end
 		check = roadZone->lookAhead(front, lookAheadDistance); // get number of free spot in front of you
 		if(check <= lookAheadDistance) { // free spots up to lookAheadDistance
 			speed = updateSpeed(check);
@@ -147,8 +147,9 @@ void Car::run() {
 			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
 			if(tail < 0) 
 				( * roadZone->getRoad() )[roadZone->getEnd() + 1 + tail].release(); // tail could be in zone
-			if(tail >= 0) 
+			if(tail >= 0 && tail <= roadExit->getEnd()) {
 				( * roadExit->getRoad() )[tail].release(); // tail is in zone
+			}
 			tail++; // car length will be 2 (a small fraction of time)
 		}
 	}// here we are gone 
