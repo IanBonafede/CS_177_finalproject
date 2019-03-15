@@ -81,7 +81,7 @@ void Car::run() {
 			front++;
 			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
 			if(tail < 0) 
-				( * roadEntrance->getRoad() )[roadEntrance->getEnd() + 1 - tail].release(); // tail could be in entrance
+				( * roadEntrance->getRoad() )[roadEntrance->getEnd() + 1 + tail].release(); // tail could be in entrance
 			if(tail >= 0) 
 				( * roadZone->getRoad() )[tail].release(); // tail is in zone
 			tail++; // car length will be 2 (a small fraction of time)
@@ -137,7 +137,7 @@ void Car::run() {
 			front++;
 			hold(speed/100.0); // in this hold, the car length is 3 (most of the time)
 			if(tail < 0) 
-				( * roadZone->getRoad() )[roadZone->getEnd() + 1 - tail].release(); // tail could be in zone
+				( * roadZone->getRoad() )[roadZone->getEnd() + 1 + tail].release(); // tail could be in zone
 			if(tail >= 0) 
 				( * roadExit->getRoad() )[tail].release(); // tail is in zone
 			tail++; // car length will be 2 (a small fraction of time)
