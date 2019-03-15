@@ -153,6 +153,7 @@ void Car::run() {
 			tail++; // car length will be 2 (a small fraction of time)
 		}
 	}// here we are gone 
+	cout << "Gone" << endl;
 	
 }
 
