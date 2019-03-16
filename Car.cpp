@@ -163,7 +163,7 @@ void Car::run1() {
 		else
 			hold(0.001);
 	}// here we are gone 
-	stat->count();
+	stat->setCount();
 	cout << "Gone" << endl;
 	
 }
@@ -318,7 +318,7 @@ void Car::run2() {
 		else
 			hold(0.001);
 	}// here we are gone 
-	stat->count();
+	stat->setCount();
 	cout << "Gone" << endl;
 	
 }

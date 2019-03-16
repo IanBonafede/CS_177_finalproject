@@ -28,5 +28,5 @@ void Stat::setCount() {
 }
 
 void Stat::printThroughput(double time) {
-	cout << "Throughput: " << count / time << endl;
+	cout << "Throughput: " << carCount / time << endl;
 }
