@@ -23,7 +23,7 @@ void Stat::run() {
 	}
 }
 
-void Stat::count() {
+void Stat::setCount() {
 	count->set();
 }
 

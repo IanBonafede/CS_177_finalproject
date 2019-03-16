@@ -10,7 +10,7 @@ private:
 public:
 	Stat();
 	void run();
-	void count();
+	void setCount();
 	void printThroughput(double time);
 	
 };

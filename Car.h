@@ -3,7 +3,6 @@
 
 
 #include "Speed.h"
-#include "Stat.h"
 
 using namespace std;
 
@@ -21,7 +20,7 @@ private:
 	int lookAheadDistance;
 	
 public:
-	Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl);
+	Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl, Stat *st);
 	void run1();
 	void run2();
 	Speed updateSpeed(int check);
