@@ -16,7 +16,7 @@ Generator::Generator(Stat *st) {
 	
 	trafficLight = new TrafficLight();
 	stat = st;
-	CarGenInt = 10; // sec
+	CarGenInt = 20; // sec
 	
 	
 	
