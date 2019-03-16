@@ -3,6 +3,7 @@
 
 
 #include "Speed.h"
+#include "Stat.h"
 
 using namespace std;
 

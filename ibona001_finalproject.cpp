@@ -3,9 +3,9 @@
 #include <string.h>
 #include "Road.cpp"
 #include "TrafficLight.cpp"
+#include "Stat.cpp"
 #include "Car.cpp"
 #include "Generator.cpp"
-#include "Stat.cpp"
 
 using namespace std;
 
