@@ -22,7 +22,7 @@ Car::Car(Road *ren, Road *rz, Road *rex, TrafficLight *tl, Stat *st) {
 	unloadTime = 15; // sec
 	
 	
-	run2();
+	run1();
 	
 	
 }
